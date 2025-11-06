@@ -4,22 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Secure Auth App - Cloud Security Project</title>
-    <meta name="description" content="A secure authentication system with Firebase and React">
+    <meta name="description" content="Secure authentication system with Firebase, React, and advanced security features">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <style>
       .loading {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        font-family: Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
       }
       .spinner {
-        border: 4px solid #f3f3f3;
-        border-top: 4px solid #3498db;
+        border: 4px solid rgba(255,255,255,0.3);
+        border-top: 4px solid white;
         border-radius: 50%;
         width: 40px;
         height: 40px;
-        animation: spin 2s linear infinite;
+        animation: spin 1s linear infinite;
         margin-right: 15px;
       }
       @keyframes spin {
@@ -35,6 +42,8 @@
         <div>Loading Secure Auth App...</div>
       </div>
     </div>
-    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- 🔥 IMPORTANT: Type module untuk ES modules -->
+    <script type="module" crossorigin src="./src/main.jsx"></script>
   </body>
 </html>
