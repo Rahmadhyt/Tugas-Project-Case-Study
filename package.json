@@ -3,21 +3,19 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "build": "vite build --config vite.config.vercel.js",
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "vercel --prod",
-    "setup": "node setup-env.js",
-    "env:check": "node -e \"import('./src/firebase-config.js').then(() => console.log('✅ Environment check passed')).catch(e => console.error('❌ Environment error:', e.message))\""
+    "preview": "vite preview"
   },
+
   "dependencies": {
+    "firebase": "^10.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "firebase": "^10.5.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",
+    "terser": "^5.44.1",
     "vite": "^4.4.5"
   }
 }

@@ -16,7 +16,9 @@
       "dest": "/index.html"
     }
   ],
-  "env": {
-    "VITE_APP_ENV": "production"
+  "build": {
+    "env": {
+      "NODE_VERSION": "18"
+    }
   }
 }

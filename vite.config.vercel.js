@@ -1,0 +1,13 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// Simplified config untuk Vercel
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    minify: false, // Non-aktifkan minify sementara
+    target: 'esnext'
+  }
+})
